@@ -13,7 +13,7 @@ const hackathons = [
     location: "LPU",
     team: "4 Authors",
     description: "Smart Water Bottle System is an AI and IoT-enabled intelligent hydration and health monitoring solution designed to promote safe water consumption and healthy lifestyle habits. The system integrates personalized hydration reminders, water quality analysis (pH and TDS monitoring), UV-C sterilization, medication reminders, emergency SOS alerts, temperature control, and mobile app-based health tracking. Powered through solar and USB charging, the invention transforms a conventional water bottle into a smart health companion that helps users maintain hydration, ensure water safety, and manage wellness effectively.",
-    image: "/hackathon/Patent.png?height=150&width=900",
+    image: "/hackathon/Patent2.0.png?height=300&width=500",
   },
   {
     title: "CODE-A-HAUNT",
