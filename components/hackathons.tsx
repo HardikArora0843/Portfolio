@@ -7,12 +7,21 @@ import { Trophy, Calendar, MapPin, Users } from "lucide-react"
 
 const hackathons = [
   {
+    title: "Patent Published (SMART WATER BOTTLE SYSTEM) By IPO",
+    position: "Available on IPR Search with Application Number - 202611002178",
+    date: "February 2026",
+    location: "LPU",
+    team: "4 Authors",
+    description: "Smart Water Bottle System is an AI and IoT-enabled intelligent hydration and health monitoring solution designed to promote safe water consumption and healthy lifestyle habits. The system integrates personalized hydration reminders, water quality analysis (pH and TDS monitoring), UV-C sterilization, medication reminders, emergency SOS alerts, temperature control, and mobile app-based health tracking. Powered through solar and USB charging, the invention transforms a conventional water bottle into a smart health companion that helps users maintain hydration, ensure water safety, and manage wellness effectively.",
+    image: "/hackathon/Patent.png?height=300&width=500",
+  },
+  {
     title: "CODE-A-HAUNT",
     position: "Gold medal",
     date: "February 2024",
     location: "LPU",
     team: "Team Binary 5",
-    description: "Built a smart E- Learning platform for students to learn coding and programming languages.",
+    description: "Built a smart E - Learning platform for students to learn coding and programming languages.",
     image: "/hackathon/codeAhaunt.png?height=300&width=500",
   },
   {
@@ -24,7 +33,6 @@ const hackathons = [
     description: "Created a Faculty connect for Rajasthan government",
     image: "/hackathon/sih.png?height=300&width=500",
   },
-
 ]
 
 export default function Hackathons() {
@@ -63,7 +71,7 @@ export default function Hackathons() {
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-glow bg-clip-text text-transparent bg-gradient-to-r from-neon-purple to-neon-blue">
-              Hackathons
+              Achievemnts & Hackathons
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-neon-purple to-neon-blue rounded-full mx-auto mb-6" />
             <p className="text-gray-300 text-lg">My hackathon experiences and achievements</p>
