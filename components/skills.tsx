@@ -5,16 +5,24 @@ import { motion, useInView } from "framer-motion"
 
 const skills = [
   {
+    category: "Programming",
+    items: ["C", "C++", "Python", "JavaScript", "Java", "SQL"],
+  },
+  {
     category: "Frontend",
-    items: ["React", "Next.js", "Angular.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
+    items: ["React", "Next.js", "Angular.js", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "MongoDB", "MySQL", "PostgreSQL", "Firebase", "REST API", "PHP" ,"Laravel"],
+    items: ["Node.js", "Express", "Socket.io", "REST APIs", "PHP" ,"Laravel"],
   },
   {
-    category: "Tools & Others",
-    items: ["Git", "GitHub", "VS Code", "Figma", "Vercel", "Postman"],
+    category: "Databases & Caching",
+    items: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis"],
+  },
+  {
+    category: "Developer Tools & Others",
+    items: ["Git", "GitHub", "VS Code", "Figma", "Vercel","Render","Postman"],
   },
   {
     category: "Soft skills",

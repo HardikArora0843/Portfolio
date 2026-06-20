@@ -162,16 +162,16 @@ export default function About() {
                 <li className="flex flex-col">
                   <span className="font-medium">B.Tech in Computer Science</span>
                   <span className="text-sm text-gray-400">Lovely Professional University • 2022 - 2026</span>
-                  <span className="text-sm text-gray-400">phagwara , Punjab  | CGPA : 7.70</span>
+                  <span className="text-sm text-gray-400">Phagwara , Punjab  | CGPA : 7.87</span>
                 </li>
                 <li className="flex flex-col">
                   <span className="font-medium">Aravali International School - Higher Secondary</span>
-                  <span className="text-sm text-gray-400">Faridabad , Haryana | 2020 - 2021 | Percentage:- 80.6%</span>
+                  <span className="text-sm text-gray-400">Faridabad , Haryana | 2020 - 2021 | Percentage:- 85%</span>
                 </li>
                 <li className="flex flex-col">
                   <span className="font-medium">Aravali International School - Matriculation
                   </span>
-                  <span className="text-sm text-gray-400">Faridabad , Haryana | 2018 - 2019 | Percentage:- 86% </span>
+                  <span className="text-sm text-gray-400">Faridabad , Haryana | 2018 - 2019 | Percentage:- 90% </span>
                 </li>
               </ul>
             </motion.div>

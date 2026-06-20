@@ -10,11 +10,21 @@ const projects = [
   {
     title: "CodeForge",
     description:
-      "LeetPro is a Full-Stack Coding Platform using MERN, Redis, Socket.io, Judge0 API, Google Gemini AI, and Razorpay, offering real-time code execution, AI-powered assistance, live ELO-rated contests, premium assessments, gamified progress tracking, and a secure admin panel for content, users, and payments.",
+      "CodeForge is a Full-Stack Coding Platform using MERN, Redis, Socket.io, Judge0 API, Google Gemini AI, and Razorpay, offering real-time code execution, AI-powered assistance, live ELO-rated contests, premium assessments, gamified progress tracking, and a secure admin panel for content, users, and payments.",
     image: "/projects/CodeForge.png?height=400&width=600",
     tags: ["MERN", "Redis", "Socket.io", "Judge0 API", "Google Gemini AI", "Monaco Editor"],
     github: "https://github.com/HardikArora0843/CodeForge",
     demo: "https://code-forge-nine.vercel.app",
+    featured: true,
+  },
+  {
+    title: "AI Kids Tutor",
+    description:
+      "AI Kids Tutor is a gamified learning platform that helps children learn through interactive educational worlds, quizzes, voice activities, and AI-driven recommendations. It features a dedicated parent portal for tracking progress, managing screen time, and creating custom tests. Built with React, Node.js, and MongoDB, the platform adapts learning based on each child's performance. The system combines engaging gameplay with parental controls to create a safe and personalized learning experience.",
+    image: "/projects/AIKidsTutor.png?height=400&width=600",
+    tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB", "JWT"],
+    github: "https://github.com/HardikArora0843/AI-Kids-Tutor",
+    demo: "https://ai-kids-tutor-child-interface.vercel.app",
     featured: true,
   },
   {
@@ -46,22 +56,13 @@ const projects = [
     featured: true,
   },
   {
-    title: "AI Safety Incident Dashboard",
-    description: "A modern, animated, and fully responsive dashboard for tracking and reporting AI safety incidents.Built with React, TypeScript, and Tailwind CSS using a modular, component-driven architecture for scalability and maintainability.",
-    image: "/projects/AISafetyIncident.png?height=400&width=600",
-    tags: ["ReactJs","TypeScript","JavaScript","Tailwind CSS","luicide-react"],
-    github: "https://github.com/HardikArora0843/AI-Safety-Incident-Dashboard",
-    demo: "https://ai-safety-incident-dashboard-eight.vercel.app",
-    featured: false,
-  },
-  {
     title: "Vision Chat",
     description: "Vision Chat is an AI-based image recognition platform with fast processing,scalable user management.",
     image: "/projects/VisionChat.png?height=400&width=600",
     tags: ["ReactJs", "JavaScript","TypeScript","PHP MyAdmin","Tailwind CSS"],
     github: "https://github.com/HardikArora0843/VisionChat",
     demo: "https://vision-chat-seven.vercel.app",
-    featured: false,
+    featured: true,
   },
 ]
 
