@@ -129,15 +129,19 @@ export default function About() {
             >
               <div className="flex items-center mb-4">
                 <Briefcase className="text-neon-purple mr-3" size={24} />
-                <h3 className="text-xl font-semibold">Experience</h3>
+                <h3 className="text-xl font-semibold">Achievements & Experience</h3>
               </div>
               <ul className="space-y-3 text-gray-300">
+                <li className="flex flex-col">
+                  <span className="font-medium">Patent Published By Indian Patent Office(IPO)</span>
+                  <span className="text-sm text-gray-400">February 2026</span>
+                </li>
                 <li className="flex flex-col">
                   <span className="font-medium">Smart India Hackathon</span>
                   <span className="text-sm text-gray-400">September 2024</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="font-medium">CODE-A-HAUNT Hackathon</span>
+                  <span className="font-medium">1st Place Winner Of CODE-A-HAUNT Hackathon</span>
                   <span className="text-sm text-gray-400">February 2024</span>
                 </li>
                 {/* <li className="flex flex-col">
