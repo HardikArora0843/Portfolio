@@ -129,25 +129,21 @@ export default function About() {
             >
               <div className="flex items-center mb-4">
                 <Briefcase className="text-neon-purple mr-3" size={24} />
-                <h3 className="text-xl font-semibold">Achievements & Experience</h3>
+                <h3 className="text-xl font-semibold">Experience</h3>
               </div>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex flex-col">
-                  <span className="font-medium">Patent Published By Indian Patent Office(IPO)</span>
-                  <span className="text-sm text-gray-400">February 2026</span>
+                  <span className="font-medium">FlyRank AI</span>
+                  <span className="text-sm text-gray-400">Backend AI Engineer Intern | July 2026</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="font-medium">Smart India Hackathon</span>
-                  <span className="text-sm text-gray-400">September 2024</span>
+                  <span className="font-light text-gray-300">Engineered an AI-powered Dynamic Internal Interlinking Engine capable of analyzing 100+ pages per run to generate contextually relevant internal link recommendations.</span>
+                  <span className="font-light text-gray-300">Designed 5+ backend APIs for AI-driven analysis, semantic retrieval, and automated linking workflows using RESTful architecture and integrated LLMs and prompt engineering to generate context-aware outputs for SEO automation.</span>
+                  <span className="font-light text-gray-300">Implemented semantic search and content similarity logic to improve internal link relevance and content discoverability.</span>
+                  <span className="font-light text-gray-300">Collaborated in an Agile development environment using Git, code reviews, and iterative testing to deliver reliable AI backend features.</span>
+                  {/* <span className="text-sm text-gray-400">Backend AI Engineer Intern | July 2026</span> */}
                 </li>
-                <li className="flex flex-col">
-                  <span className="font-medium">1st Place Winner Of CODE-A-HAUNT Hackathon</span>
-                  <span className="text-sm text-gray-400">February 2024</span>
-                </li>
-                {/* <li className="flex flex-col">
-                  <span className="font-medium">Web Developer Intern</span>
-                  <span className="text-sm text-gray-400">Digital Innovations • 2019 - 2020</span>
-                </li> */}
+                
               </ul>
             </motion.div>
             
@@ -160,25 +156,23 @@ export default function About() {
             >
               <div className="flex items-center mb-4">
                 <Briefcase className="text-neon-purple mr-3" size={24} />
-                <h3 className="text-xl font-semibold">Achievements & Experience</h3>
+                <h3 className="text-xl font-semibold">Achievements</h3>
               </div>
               <ul className="space-y-3 text-gray-300">
+
+                <li className="flex flex-col">
+                  <span className="font-medium">Review Paper Accepted & Presented at an IEEE Conference</span>
+                  <span className="text-sm text-gray-400">July 2026</span>
+                </li>
                 <li className="flex flex-col">
                   <span className="font-medium">Patent Published By Indian Patent Office(IPO)</span>
                   <span className="text-sm text-gray-400">February 2026</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="font-medium">Smart India Hackathon</span>
-                  <span className="text-sm text-gray-400">September 2024</span>
-                </li>
-                <li className="flex flex-col">
                   <span className="font-medium">1st Place Winner Of CODE-A-HAUNT Hackathon</span>
                   <span className="text-sm text-gray-400">February 2024</span>
                 </li>
-                {/* <li className="flex flex-col">
-                  <span className="font-medium">Web Developer Intern</span>
-                  <span className="text-sm text-gray-400">Digital Innovations • 2019 - 2020</span>
-                </li> */}
+                
               </ul>
             </motion.div>
 
