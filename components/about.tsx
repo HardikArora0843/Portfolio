@@ -150,6 +150,37 @@ export default function About() {
                 </li> */}
               </ul>
             </motion.div>
+            
+            <motion.div
+              className="glass-effect rounded-xl p-6 card-hover-effect"
+              whileHover={{
+                boxShadow: "0 0 25px rgba(123, 31, 162, 0.5)",
+                borderColor: "rgba(123, 31, 162, 0.8)",
+              }}
+            >
+              <div className="flex items-center mb-4">
+                <Briefcase className="text-neon-purple mr-3" size={24} />
+                <h3 className="text-xl font-semibold">Achievements & Experience</h3>
+              </div>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex flex-col">
+                  <span className="font-medium">Patent Published By Indian Patent Office(IPO)</span>
+                  <span className="text-sm text-gray-400">February 2026</span>
+                </li>
+                <li className="flex flex-col">
+                  <span className="font-medium">Smart India Hackathon</span>
+                  <span className="text-sm text-gray-400">September 2024</span>
+                </li>
+                <li className="flex flex-col">
+                  <span className="font-medium">1st Place Winner Of CODE-A-HAUNT Hackathon</span>
+                  <span className="text-sm text-gray-400">February 2024</span>
+                </li>
+                {/* <li className="flex flex-col">
+                  <span className="font-medium">Web Developer Intern</span>
+                  <span className="text-sm text-gray-400">Digital Innovations • 2019 - 2020</span>
+                </li> */}
+              </ul>
+            </motion.div>
 
             <motion.div
               className="glass-effect rounded-xl p-6 card-hover-effect"
@@ -166,7 +197,7 @@ export default function About() {
                 <li className="flex flex-col">
                   <span className="font-medium">B.Tech in Computer Science</span>
                   <span className="text-sm text-gray-400">Lovely Professional University • 2022 - 2026</span>
-                  <span className="text-sm text-gray-400">Phagwara , Punjab  | CGPA : 7.87</span>
+                  <span className="text-sm text-gray-400">Phagwara , Punjab  | CGPA : 8.04</span>
                 </li>
                 <li className="flex flex-col">
                   <span className="font-medium">Aravali International School - Higher Secondary</span>
