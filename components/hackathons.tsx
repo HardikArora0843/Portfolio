@@ -7,6 +7,15 @@ import { Trophy, Calendar, MapPin, Users } from "lucide-react"
 
 const hackathons = [
   {
+    title: "Review Paper Accepted & Presented at an IEEE Conference",
+    position: "I2ITCON IEEE 2026 Conference",
+    date: "July 2026",
+    location: "Pune Conference",
+    team: "5 Authors",
+    description: "My review paper, A Critical Analysis of Edge-Deployable Vision-Based Assistive Navigation Systems: From Detection Accuracy to Real-World Safety, was accepted and presented at the IEEE I2ITCON 2026 Conference. It was also accepted for presentation at International Conferences in Malaysia and New York, USA.This review paper critically analyzes recent vision-based assistive navigation systems for visually impaired individuals, focusing on the trade-offs between detection accuracy, edge deployment, and real-world safety. It introduces a structured taxonomy and a unified four-layer evaluation framework to compare existing approaches. The paper identifies key research gaps and proposes future directions for developing reliable, user-centered, and safety-aware assistive navigation technologies.",
+    image: "/hackathon/ReviewPaper.png?height=300&width=500",
+  },
+  {
     title: "Patent Published (SMART WATER BOTTLE SYSTEM) By Indian Patent Office(IPO)",
     position: "Available on IPR Search with Application Number - 202611002178",
     date: "February 2026",

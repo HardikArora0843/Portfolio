@@ -43,7 +43,7 @@ export default function Resume() {
               Resume
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-neon-purple to-neon-blue rounded-full mx-auto mb-6" />
-            <p className="text-gray-300 text-lg">Download my resume or watch my video CV</p>
+            <p className="text-gray-300 text-lg">Download my resume</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
