@@ -5,7 +5,7 @@ import { motion, useInView, useAnimationControls } from "framer-motion"
 import { Code, GitBranch, GitPullRequest, Star, Award, Hash, TrendingUp } from "lucide-react"
 
 const programmingStats = [
-  { label: "Repositories", value: "30+", icon: Code },
+  { label: "Repositories", value: "45+", icon: Code },
   { label: "Contributions", value: "500+", icon: GitPullRequest },
   { label: "Stars", value: "100+", icon: Star },
   { label: "Forks", value: "50+", icon: GitBranch },

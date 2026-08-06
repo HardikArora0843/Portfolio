@@ -7,11 +7,11 @@ import { Trophy, Calendar, MapPin, Users } from "lucide-react"
 
 const hackathons = [
   {
-    title: "Patent Published (SMART WATER BOTTLE SYSTEM) By IPO",
+    title: "Patent Published (SMART WATER BOTTLE SYSTEM) By Indian Patent Office(IPO)",
     position: "Available on IPR Search with Application Number - 202611002178",
     date: "February 2026",
     location: "LPU",
-    team: "4 Authors",
+    team: "5 Authors",
     description: "Smart Water Bottle System is an AI and IoT-enabled intelligent hydration and health monitoring solution designed to promote safe water consumption and healthy lifestyle habits. The system integrates personalized hydration reminders, water quality analysis (pH and TDS monitoring), UV-C sterilization, medication reminders, emergency SOS alerts, temperature control, and mobile app-based health tracking. Powered through solar and USB charging, the invention transforms a conventional water bottle into a smart health companion that helps users maintain hydration, ensure water safety, and manage wellness effectively.",
     image: "/hackathon/Patent5.png?height=300&width=500",
   },
@@ -20,7 +20,7 @@ const hackathons = [
     position: "Gold medal",
     date: "February 2024",
     location: "LPU",
-    team: "Team Binary 5",
+    team: "Team Binary Five",
     description: "Built a smart E - Learning platform for students to learn coding and programming languages.",
     image: "/hackathon/codeAhaunt.png?height=300&width=500",
   },
@@ -29,7 +29,7 @@ const hackathons = [
     position: "Top 50",
     date: "Sept 2024",
     location: "LPU",
-    team: "Team Binary five",
+    team: "Team Binary Five",
     description: "Created a Faculty connect for Rajasthan government",
     image: "/hackathon/sih.png?height=300&width=500",
   },

@@ -81,7 +81,7 @@ export default function Resume() {
                   education.
                 </p>
                 <motion.a
-                  href="https://drive.google.com/file/d/1PlhoymSUC67gWrGblag6rjy1AOqrALYF/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1v960JKK_tALHG6AMpZAmNZLjj2IVXfrh/view?usp=sharing"
                   className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-neon-purple to-neon-blue text-white font-medium"
                   whileHover={{
                     scale: 1.05,
@@ -130,7 +130,7 @@ export default function Resume() {
                   education.
                 </p>
                 <motion.a
-                  href="https://drive.google.com/file/d/1APUrD6b_EGE9qQ6y3QvR9HspptpBGhat/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1v960JKK_tALHG6AMpZAmNZLjj2IVXfrh/view?usp=sharing"
                   className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-neon-purple to-neon-blue text-white font-medium"
                   whileHover={{
                     scale: 1.05,

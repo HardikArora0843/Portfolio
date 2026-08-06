@@ -137,10 +137,10 @@ export default function About() {
                   <span className="text-sm text-gray-400">Backend AI Engineer Intern | July 2026</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="font-light text-gray-300">Engineered an AI-powered Dynamic Internal Interlinking Engine capable of analyzing 100+ pages per run to generate contextually relevant internal link recommendations.</span>
-                  <span className="font-light text-gray-300">Designed 5+ backend APIs for AI-driven analysis, semantic retrieval, and automated linking workflows using RESTful architecture and integrated LLMs and prompt engineering to generate context-aware outputs for SEO automation.</span>
-                  <span className="font-light text-gray-300">Implemented semantic search and content similarity logic to improve internal link relevance and content discoverability.</span>
-                  <span className="font-light text-gray-300">Collaborated in an Agile development environment using Git, code reviews, and iterative testing to deliver reliable AI backend features.</span>
+                  <span className="text-sm font-light text-gray-300">Engineered an AI-powered Dynamic Internal Interlinking Engine capable of analyzing 100+ pages per run to generate contextually relevant internal link recommendations.</span>
+                  <span className="text-sm font-light text-gray-300">Designed 5+ backend APIs for AI-driven analysis, semantic retrieval, and automated linking workflows using RESTful architecture and integrated LLMs and prompt engineering to generate context-aware outputs for SEO automation.</span>
+                  <span className="text-sm font-light text-gray-300">Implemented semantic search and content similarity logic to improve internal link relevance and content discoverability.</span>
+                  <span className="text-sm font-light text-gray-300">Collaborated in an Agile development environment using Git, code reviews, and iterative testing to deliver reliable AI backend features.</span>
                   {/* <span className="text-sm text-gray-400">Backend AI Engineer Intern | July 2026</span> */}
                 </li>
                 

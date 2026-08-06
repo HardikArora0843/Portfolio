@@ -9,6 +9,10 @@ const skills = [
     items: ["C", "C++", "Python", "JavaScript", "Java", "SQL"],
   },
   {
+    category: "AI & Machine Learning",
+    items: ["LLMs", "Prompt Engineering", "Semantic Search", "AI APIs", "AI Content Automation", "RAG"],
+  },
+  {
     category: "Frontend",
     items: ["React", "Next.js", "Angular.js", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
   },
@@ -24,10 +28,7 @@ const skills = [
     category: "Developer Tools & Others",
     items: ["Git", "GitHub", "VS Code", "Figma", "Vercel","Render","Postman"],
   },
-  {
-    category: "Soft skills",
-    items: ["Problem-Solving", "Team Player", "Time Management", "Adaptability", "Attention to Detail"],
-  },
+  
 ]
 
 // Skill proficiency data with fixed percentages
@@ -113,7 +114,7 @@ export default function Skills() {
             ))}
           </div>
 
-          <motion.div
+          {/* <motion.div
             variants={itemVariants}
             className="mt-12 glass-effect rounded-xl p-6 md:p-8 card-hover-effect"
             whileHover={{
@@ -151,7 +152,7 @@ export default function Skills() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
