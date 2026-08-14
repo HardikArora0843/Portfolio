@@ -3,9 +3,11 @@
 import { useRef, useState, useEffect } from "react"
 import Image from "next/image"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { ArrowDown } from "lucide-react"
+import { ArrowDown, Sparkles } from "lucide-react"
+import { useAiAgent } from "@/components/ai-agent"
 
 export default function Hero() {
+  const { openChat } = useAiAgent()
   const containerRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -108,6 +110,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.1 }}
+            className="flex flex-wrap items-center justify-center gap-4 lg:justify-start"
           >
             <a
               href="#about"
@@ -115,6 +118,14 @@ export default function Hero() {
             >
               Explore My Work
             </a>
+            <button
+              type="button"
+              onClick={openChat}
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-neon-purple/40 bg-space-accent/50 text-white font-medium transition-transform hover:scale-105 hover:border-neon-purple/70 hover:shadow-lg hover:shadow-neon-purple/20"
+            >
+              <Sparkles size={18} />
+              Ask My AI
+            </button>
           </motion.div>
         </motion.div>
 

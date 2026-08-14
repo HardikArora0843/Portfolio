@@ -14,6 +14,7 @@ import Contact from "@/components/contact"
 import Resume from "@/components/resume"
 import LoadingScreen from "@/components/loading-screen"
 import Navbar from "@/components/navbar"
+import { AiAgentProvider } from "@/components/ai-agent"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -35,24 +36,26 @@ export default function Home() {
         {isLoading ? (
           <LoadingScreen key="loading" />
         ) : (
-          <motion.div
-            key="content"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="relative z-10"
-          >
-            <Navbar />
-            <Hero />
-            <About />
-            <Skills />
-            <Projects />
-            <Certifications />
-            <Programming />
-            <Hackathons />
-            <Contact />
-            <Resume />
-          </motion.div>
+          <AiAgentProvider>
+            <motion.div
+              key="content"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="relative z-10"
+            >
+              <Navbar />
+              <Hero />
+              <About />
+              <Skills />
+              <Projects />
+              <Certifications />
+              <Programming />
+              <Hackathons />
+              <Contact />
+              <Resume />
+            </motion.div>
+          </AiAgentProvider>
         )}
       </AnimatePresence>
     </main>
