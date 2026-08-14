@@ -12,6 +12,8 @@ import { X, Send, RotateCcw, Trash2, Loader2 } from "lucide-react"
 import AiMessage from "@/components/ai-message"
 import type { ChatMessage } from "@/types/personal"
 
+const MAX_API_MESSAGES = 8
+
 const SUGGESTED_QUESTIONS = [
   "What does Hardik do?",
   "Tell me about Hardik's FlyRank AI experience.",
@@ -73,6 +75,7 @@ export default function AiChatWindow({ isOpen, onClose }: AiChatWindowProps) {
 
       const apiMessages = [...messages, userMessage]
         .filter((m) => m.id !== "welcome")
+        .slice(-MAX_API_MESSAGES)
         .map((m) => ({ role: m.role, content: m.content }))
 
       setMessages((prev) => [...prev, userMessage])

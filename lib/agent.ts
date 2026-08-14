@@ -11,11 +11,19 @@ import {
 import { SYSTEM_PROMPT } from "@/lib/agent/system-prompt"
 import type { AgentResponse } from "@/types/personal"
 
-export const MAX_TOOL_ITERATIONS = 5
+export const MAX_TOOL_ITERATIONS = 3
+const MAX_CONTEXT_MESSAGES = 8
 
 export interface AgentMessage {
   role: "user" | "assistant"
   content: string
+}
+
+function shouldForceFinalResponse(
+  messages: ChatCompletionMessageParam[]
+): boolean {
+  const last = messages[messages.length - 1]
+  return last?.role === "tool"
 }
 
 export async function runAgent(
@@ -25,9 +33,11 @@ export async function runAgent(
   const model = getOpenAIModel()
   const sourcesUsed = new Set<string>()
 
+  const recentMessages = messages.slice(-MAX_CONTEXT_MESSAGES)
+
   const conversationMessages: ChatCompletionMessageParam[] = [
     { role: "system", content: SYSTEM_PROMPT },
-    ...messages.map(
+    ...recentMessages.map(
       (m): ChatCompletionMessageParam => ({
         role: m.role,
         content: m.content,
@@ -36,13 +46,16 @@ export async function runAgent(
   ]
 
   for (let iteration = 0; iteration < MAX_TOOL_ITERATIONS; iteration++) {
+    const forceFinal = shouldForceFinalResponse(conversationMessages)
+
     const response = await client.chat.completions.create({
       model,
       messages: conversationMessages,
-      tools: toolDefinitions,
-      tool_choice: "auto",
-      temperature: 0.3,
-      max_tokens: 800,
+      ...(forceFinal
+        ? { tool_choice: "none" as const }
+        : { tools: toolDefinitions, tool_choice: "auto" as const }),
+      temperature: 0.2,
+      max_tokens: 450,
     })
 
     const choice = response.choices[0]
@@ -65,9 +78,11 @@ export async function runAgent(
       }
     }
 
-    for (const toolCall of toolCalls) {
-      if (toolCall.type !== "function") continue
+    const functionToolCalls = toolCalls.filter(
+      (toolCall) => toolCall.type === "function"
+    )
 
+    const toolMessages = functionToolCalls.map((toolCall) => {
       const toolName = toolCall.function.name
       let toolArgs: Record<string, unknown> = {}
 
@@ -96,8 +111,10 @@ export async function runAgent(
         tool_call_id: toolCall.id,
         content: JSON.stringify(toolResult),
       }
-      conversationMessages.push(toolMessage)
-    }
+      return toolMessage
+    })
+
+    conversationMessages.push(...toolMessages)
   }
 
   return {

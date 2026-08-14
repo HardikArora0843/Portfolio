@@ -12,8 +12,8 @@ export default function Contact() {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: false, amount: 0.2 })
   const [formState, setFormState] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    reply_to: "",
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -43,51 +43,58 @@ export default function Contact() {
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    })
+    const { name, value } = e.target
+    setFormState((prev) => ({
+      ...prev,
+      [name]: value,
+    }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     setSubmitStatus({})
-    
-    // EmailJS integration
-    // You need to sign up at https://www.emailjs.com/ and get your Service ID, Template ID, and Public Key
-    // Add these values in the .env.local file as:
-    // NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
-    // NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
-    // NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
-    
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSubmitStatus({
+        success: false,
+        message: "Contact form is not configured. Please try again later.",
+      })
+      setIsSubmitting(false)
+      return
+    }
+
     try {
       if (!formRef.current) return
-      
+
       const result = await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        serviceId,
+        templateId,
         formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+        publicKey
       )
-      
-      if (result.text === 'OK') {
-        setSubmitStatus({ 
-          success: true, 
-          message: "Message sent successfully! I'll get back to you soon." 
+
+      if (result.status === 200 || result.text === "OK") {
+        setSubmitStatus({
+          success: true,
+          message: "Message sent successfully! I'll get back to you soon.",
         })
-        setFormState({ name: "", email: "", message: "" })
+        setFormState({ from_name: "", reply_to: "", message: "" })
       } else {
-        setSubmitStatus({ 
-          success: false, 
-          message: "Failed to send message. Please try again." 
+        setSubmitStatus({
+          success: false,
+          message: "Failed to send message. Please try again.",
         })
       }
     } catch (error) {
-      console.error('Error sending email:', error)
-      setSubmitStatus({ 
-        success: false, 
-        message: "An error occurred. Please try again later." 
+      console.error("Error sending email:", error)
+      setSubmitStatus({
+        success: false,
+        message: "An error occurred. Please try again later.",
       })
     } finally {
       setIsSubmitting(false)
@@ -288,7 +295,7 @@ export default function Contact() {
                       type="text"
                       id="name"
                       name="from_name" // For EmailJS template
-                      value={formState.name}
+                      value={formState.from_name}
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-2 rounded-lg bg-space-accent border border-neon-purple/20 text-white focus:border-neon-purple focus:outline-none focus:ring-1 focus:ring-neon-purple"
@@ -303,7 +310,7 @@ export default function Contact() {
                       type="email"
                       id="email"
                       name="reply_to" // For EmailJS template
-                      value={formState.email}
+                      value={formState.reply_to}
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-2 rounded-lg bg-space-accent border border-neon-purple/20 text-white focus:border-neon-purple focus:outline-none focus:ring-1 focus:ring-neon-purple"
