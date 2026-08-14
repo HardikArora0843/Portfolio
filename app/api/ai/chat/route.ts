@@ -46,8 +46,8 @@ function validateMessages(body: unknown): AgentMessage[] | null {
 
 export async function POST(request: NextRequest) {
   try {
-    if (!process.env.OPENAI_API_KEY) {
-      console.error("OPENAI_API_KEY is not configured")
+    if (!process.env.OPENROUTER_API_KEY) {
+      console.error("OPENROUTER_API_KEY is not configured")
       return NextResponse.json(
         {
           error:

@@ -1,12 +1,12 @@
 # Hardik Arora — Portfolio
 
-Personal portfolio website built with Next.js, featuring projects, skills, experience, and a **Personal AI Agent** powered by OpenAI tool calling.
+Personal portfolio website built with Next.js, featuring projects, skills, experience, and a **Personal AI Agent** powered by OpenRouter tool calling (via the OpenAI-compatible SDK).
 
 ## Personal AI Agent
 
 This portfolio includes an AI assistant that answers questions about Hardik's professional background — projects, skills, experience, education, certifications, and contact information.
 
-The assistant uses **verified structured data** and **OpenAI function/tool calling**. It does not use RAG, embeddings, or vector databases.
+The assistant uses **verified structured data** and **OpenAI-compatible function/tool calling** through OpenRouter. It does not use RAG, embeddings, or vector databases.
 
 ## Architecture
 
@@ -17,13 +17,13 @@ POST /api/ai/chat
    ↓
 Next.js Server (Agent Service)
    ↓
-OpenAI API
+OpenRouter API
    ↓
 Tool / Function Calling
    ↓
 Structured Personal Data (data/)
    ↓
-OpenAI (final response)
+OpenRouter (final response)
    ↓
 Chat UI
 ```
@@ -32,12 +32,12 @@ Chat UI
 
 1. User asks a question in the chat UI.
 2. The browser sends the conversation to `POST /api/ai/chat`.
-3. The server sends the message, system prompt, and available tools to OpenAI.
-4. OpenAI decides which personal-data tools are relevant.
+3. The server sends the message, system prompt, and available tools to OpenRouter.
+4. OpenRouter decides which personal-data tools are relevant.
 5. The server executes the requested tools locally.
 6. Tools return verified structured data from `data/`.
-7. Tool results are sent back to OpenAI.
-8. OpenAI generates the final natural-language response.
+7. Tool results are sent back to OpenRouter.
+8. OpenRouter generates the final natural-language response.
 9. The response is returned to the browser.
 
 ```mermaid
@@ -45,7 +45,7 @@ sequenceDiagram
     participant U as User
     participant C as Chat UI
     participant A as /api/ai/chat
-    participant O as OpenAI
+    participant O as OpenRouter
     participant T as Tools
     participant D as data/
 
@@ -85,7 +85,7 @@ Tools are defined in `lib/agent/tools.ts` and read from typed data in `data/`.
 
 ## Security
 
-- OpenAI API key is **server-side only** (`OPENAI_API_KEY`).
+- OpenRouter API key is **server-side only** (`OPENROUTER_API_KEY`).
 - Never expose the key with `NEXT_PUBLIC_` prefix.
 - Input validation: empty messages rejected, 4000 character limit.
 - Tool loop capped at 5 iterations.
@@ -97,10 +97,8 @@ Tools are defined in `lib/agent/tools.ts` and read from typed data in `data/`.
 Copy `.env.example` to `.env.local`:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key
-
-# Optional
-# OPENAI_MODEL=gpt-4o-mini
+OPENROUTER_API_KEY=your_openrouter_api_key
+OPENROUTER_MODEL=openrouter/free
 
 # Existing contact form (EmailJS)
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=
@@ -113,7 +111,7 @@ NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
 ```bash
 npm install --legacy-peer-deps
 cp .env.example .env.local
-# Add your OPENAI_API_KEY to .env.local
+# Add your OPENROUTER_API_KEY to .env.local
 npm run dev
 ```
 
@@ -151,7 +149,7 @@ types/personal.ts           # TypeScript interfaces
 - TypeScript
 - Tailwind CSS
 - Framer Motion
-- OpenAI API (tool calling)
+- OpenRouter API via OpenAI-compatible SDK (tool calling)
 - shadcn/ui components
 
 ## License
