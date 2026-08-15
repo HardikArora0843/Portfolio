@@ -152,6 +152,4 @@ types/personal.ts           # TypeScript interfaces
 - OpenRouter API via OpenAI-compatible SDK (tool calling)
 - shadcn/ui components
 
-## License
 
-Private portfolio project.
