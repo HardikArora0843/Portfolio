@@ -137,10 +137,10 @@ export default function About() {
                   <span className="text-sm text-gray-400">Backend AI Engineer Intern | July 2026</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="text-sm font-light text-gray-300">Engineered a multi-tenant usage and billing service supporting 2 subscription plans, tracking API/AI usage, enforcing quotas, calculating token costs, and managing Stripe subscriptions with reliable payment processing.</span>
-                  <span className="text-sm font-light text-gray-300">Developed an embeddable lead-capture platform with 44 automated tests, enabling businesses to collect leads from external websites, validate submissions, prevent spam, enrich visitor data, and process notifications reliably in the background.</span>
-                  <span className="text-sm font-light text-gray-300">Implemented a social media automation service supporting 3 platforms, converting blog posts into platform-specific content, validating publishing rules, enabling human approval, scheduling posts, and preventing duplicate publishing.</span>
-                  <span className="text-sm font-light text-gray-300">Designed an AI image-matching service with 90 automated tests, analysing images with Gemini, matching them to blog posts using semantic similarity, rejecting incorrect matches, supporting human review, and processing images asynchronously.</span>
+                  <span className="text-sm font-light text-gray-300"><ul>Engineered a multi-tenant usage and billing service supporting 2 subscription plans, tracking API/AI usage, enforcing quotas, calculating token costs, and managing Stripe subscriptions with reliable payment processing.</ul></span>
+                  <span className="text-sm font-light text-gray-300"><ul>Developed an embeddable lead-capture platform with 44 automated tests, enabling businesses to collect leads from external websites, validate submissions, prevent spam, enrich visitor data, and process notifications reliably in the background.</ul></span>
+                  <span className="text-sm font-light text-gray-300"><ul>Implemented a social media automation service supporting 3 platforms, converting blog posts into platform-specific content, validating publishing rules, enabling human approval, scheduling posts, and preventing duplicate publishing.</ul></span>
+                  <span className="text-sm font-light text-gray-300"><ul>Designed an AI image-matching service with 90 automated tests, analysing images with Gemini, matching them to blog posts using semantic similarity, rejecting incorrect matches, supporting human review, and processing images asynchronously.</ul></span>
                   {/* <span className="text-sm text-gray-400">Backend AI Engineer Intern | July 2026</span> */}
                 </li>
                 
