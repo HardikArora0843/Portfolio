@@ -9,7 +9,7 @@ const skills = [
     items: ["C", "C++", "Python", "JavaScript", "Java", "SQL"],
   },
   {
-    category: "AI & Machine Learning",
+    category: "AI",
     items: ["LLMs", "Prompt Engineering", "Semantic Search", "AI APIs", "AI Content Automation", "RAG"],
   },
   {
@@ -22,7 +22,7 @@ const skills = [
   },
   {
     category: "Databases & Caching",
-    items: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis"],
+    items: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis","Prisma","SQLite"],
   },
   {
     category: "Developer Tools & Others",

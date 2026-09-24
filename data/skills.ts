@@ -6,7 +6,7 @@ export const skills: SkillCategory[] = [
     items: ["C", "C++", "Python", "JavaScript", "Java", "SQL"],
   },
   {
-    category: "AI & Machine Learning",
+    category: "AI",
     items: [
       "LLMs",
       "Prompt Engineering",
@@ -42,7 +42,7 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Databases & Caching",
-    items: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis"],
+    items: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis","Prisma","SQLite"],
   },
   {
     category: "Tools",

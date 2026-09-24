@@ -59,7 +59,7 @@ export const toolDefinitions: ChatCompletionTool[] = [
           category: {
             type: "string",
             description:
-              "Optional category filter, e.g. 'Programming', 'AI & Machine Learning', 'Frontend', 'Backend', 'Databases & Caching', 'Tools'.",
+              "Optional category filter, e.g. 'Programming', 'AI', 'Frontend', 'Backend', 'Databases & Caching', 'Tools'.",
           },
         },
         required: [],

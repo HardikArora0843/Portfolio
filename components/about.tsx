@@ -137,10 +137,10 @@ export default function About() {
                   <span className="text-sm text-gray-400">Backend AI Engineer Intern | July 2026</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="text-sm font-light text-gray-300">Engineered an AI-powered Dynamic Internal Interlinking Engine capable of analyzing 100+ pages per run to generate contextually relevant internal link recommendations.</span>
-                  <span className="text-sm font-light text-gray-300">Designed 5+ backend APIs for AI-driven analysis, semantic retrieval, and automated linking workflows using RESTful architecture and integrated LLMs and prompt engineering to generate context-aware outputs for SEO automation.</span>
-                  <span className="text-sm font-light text-gray-300">Implemented semantic search and content similarity logic to improve internal link relevance and content discoverability.</span>
-                  <span className="text-sm font-light text-gray-300">Collaborated in an Agile development environment using Git, code reviews, and iterative testing to deliver reliable AI backend features.</span>
+                  <span className="text-sm font-light text-gray-300">Engineered a multi-tenant usage and billing service supporting 2 subscription plans, tracking API/AI usage, enforcing quotas, calculating token costs, and managing Stripe subscriptions with reliable payment processing.</span>
+                  <span className="text-sm font-light text-gray-300">Developed an embeddable lead-capture platform with 44 automated tests, enabling businesses to collect leads from external websites, validate submissions, prevent spam, enrich visitor data, and process notifications reliably in the background.</span>
+                  <span className="text-sm font-light text-gray-300">Implemented a social media automation service supporting 3 platforms, converting blog posts into platform-specific content, validating publishing rules, enabling human approval, scheduling posts, and preventing duplicate publishing.</span>
+                  <span className="text-sm font-light text-gray-300">Designed an AI image-matching service with 90 automated tests, analysing images with Gemini, matching them to blog posts using semantic similarity, rejecting incorrect matches, supporting human review, and processing images asynchronously.</span>
                   {/* <span className="text-sm text-gray-400">Backend AI Engineer Intern | July 2026</span> */}
                 </li>
                 
@@ -169,7 +169,7 @@ export default function About() {
                   <span className="text-sm text-gray-400">February 2026</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="font-medium">1st Place Winner Of CODE-A-HAUNT Hackathon</span>
+                  <span className="font-medium">Secured 1st Rank out of 300+ teams (1000+ participants) at CODE-A-HAUNT Hackathon</span>
                   <span className="text-sm text-gray-400">February 2024</span>
                 </li>
                 
@@ -194,11 +194,11 @@ export default function About() {
                   <span className="text-sm text-gray-400">Phagwara , Punjab  | CGPA : 8.04</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="font-medium">Aravali International School - Higher Secondary</span>
+                  <span className="font-medium">Aravali International School - Class XII</span>
                   <span className="text-sm text-gray-400">Faridabad , Haryana | 2020 - 2021 | Percentage:- 85%</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="font-medium">Aravali International School - Matriculation
+                  <span className="font-medium">Aravali International School - Class X
                   </span>
                   <span className="text-sm text-gray-400">Faridabad , Haryana | 2018 - 2019 | Percentage:- 90% </span>
                 </li>
