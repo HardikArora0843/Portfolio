@@ -80,13 +80,10 @@ export default function About() {
                       <h3 className="text-xl font-semibold">Who I Am</h3>
                     </div>
                     <p className="text-gray-300 mb-4">
-                      I&apos;m Hardik Arora, a passionate Full Stack Developer with expertise in building modern web
-                      applications. I specialize in creating responsive, user-friendly interfaces and robust backend systems
-                      that deliver exceptional user experiences.
+                      I'm Hardik Arora, a versatile Developer with experience building full-stack web applications, backend systems, and AI-powered solutions. I enjoy turning ideas into practical, user-focused products by combining strong software fundamentals with modern technologies.
                     </p>
                     <p className="text-gray-300">
-                      With a strong foundation in computer science and a keen interest in emerging technologies, I
-                      continuously expand my skills to stay at the forefront of web development trends and best practices.
+                      With a foundation in computer science and hands-on experience across frontend, backend, databases, real-time systems, and AI, I continuously explore new technologies and build solutions that are scalable, reliable, and useful in real-world applications.
                     </p>
                 <br />
                     <div className="flex items-center mb-4">
@@ -94,9 +91,9 @@ export default function About() {
                   <h3 className="text-xl font-semibold">What I Do</h3>
                 </div>
                 <p className="text-gray-300 mb-4">
-                  I develop full-stack web applications using modern JavaScript frameworks like React and Next.js for
-                  frontend, and Node.js with Express for backend services. My expertise includes building RESTful APIs,
-                  implementing authentication systems, and working with various databases.
+                  I build full-stack applications using technologies like React, Angular, Node.js, and Express, along with databases such as MongoDB, PostgreSQL, MySQL, and Redis. I also integrate AI capabilities using LLMs, AI APIs, semantic search, RAG, and automation workflows.
+                  
+                  My work includes developing REST APIs, authentication systems, real-time applications, database-driven platforms, AI-powered features, and complete products from frontend to backend.
                 </p>
                     
                   </div>
