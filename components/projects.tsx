@@ -31,7 +31,7 @@ const projects = [
     title: "Usage Metering & Billing Engine",
     description:
       "Usage Metering & Billing Engine is a multi-tenant backend service that tracks API and AI usage, enforces subscription quotas, calculates token-based costs, and manages Stripe subscriptions. It includes idempotent metering to prevent duplicate charges, secure webhook handling, background job processing with retries, and automated testing for reliable billing workflows.",
-    image: "/projects/flyrank-capstone-metering-billing.png?height=400&width=600",
+    image: "/projects/flyrank_capstone_metering_billing.png?height=400&width=600",
     tags: ["Node.js" , "Express.js" , "Prisma" , "SQLite" , "Stripe" , "Zod" , "JWT" , "Jest" , "Supertest"],
     github: "https://github.com/HardikArora0843/flyrank-capstone-metering-billing",
     demo: "https://github.com/HardikArora0843/flyrank-capstone-metering-billing",
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Embeddable Widget & Lead-Capture Platform",
     description: "Embeddable Widget & Lead-Capture Platform is a multi-tenant platform that lets businesses create customizable lead forms and embed them on external websites with a simple script. It securely handles cross-origin submissions with validation, spam protection, rate limiting, geolocation enrichment, background processing, and tenant-isolated analytics.",
-    image: "/projects/flyrank-capstone-widget-platform.png?height=400&width=600",
+    image: "/projects/flyrank_capstone_widget_platform.png?height=400&width=600",
     tags: ["Node.js" , "Express.js" , "PostgreSQL" , "Zod" , "JWT" , "Vanilla JS" , "Vitest" , "Supertest"],
     github: "https://github.com/HardikArora0843/flyrank-capstone-widget-platform",
     demo: "https://github.com/HardikArora0843/flyrank-capstone-widget-platform",
@@ -49,7 +49,7 @@ const projects = [
   {
     title: "Social Media Studio",
     description: "Social Media Studio is a backend service that transforms a single blog post into platform-specific social media content for Telegram, X, and LinkedIn. It enforces platform constraints, supports human review and approval, and provides durable scheduling with idempotent publishing to prevent duplicate posts.",
-    image: "/projects/flyrank-capstone-social-studio.png?height=400&width=600",
+    image: "/projects/flyrank_capstone_socialstudio.png?height=400&width=600",
     tags: ["Node.js" ,"Express.js" , "Prisma" , "SQLite" , "Vitest", "Telegram Bot API"],
     github: "https://github.com/HardikArora0843/flyrank-capstone-social-studio",
     demo: "https://github.com/HardikArora0843/flyrank-capstone-social-studio",
@@ -58,7 +58,7 @@ const projects = [
   {
     title: "Image Relevance & Auto-Tagging",
     description: "Image Relevance & Auto-Tagging is an AI-powered backend that analyzes images and blog posts, generates embeddings, and matches relevant images using semantic similarity. It adds deterministic mismatch checks, confidence validation, human review, and asynchronous processing to prevent incorrect recommendations and return no_confident_match when no safe image is found.",
-    image: "/projects/flyrank-capstone-imagerelevance.png?height=400&width=600",
+    image: "/projects/flyrank_capstone_imagerelevance.png?height=400&width=600",
     tags: ["Node.js", "Express.js" , "MongoDB" , "Cloudinary" , "Gemini Vision" , "Gemini Embeddings" ,"Inngest" , "Zod"],
     github: "https://github.com/HardikArora0843/flyrank-capstone-imagerelevance",
     demo: "https://github.com/HardikArora0843/flyrank-capstone-imagerelevance",
